@@ -1,0 +1,36 @@
+<%- include ("partials/header") %>
+
+<div class="ui padded grid">
+    <div class="six wide centered column">
+        <form class="ui form" action="/register" method="POST">
+            <div class="field">
+              <label>First Name</label>
+              <input type="text" name="firstName" placeholder="First Name">
+            </div>
+            <div class="field">
+                <label>Last Name</label>
+                <input type="text" name="lastName" placeholder="Last Name">
+              </div>
+              <div class="field">
+                <label>Username</label>
+                <input type="text" name="username" placeholder="Username">
+              </div>
+              <div class="field">
+                <label>Email</label>
+                <input type="text" name="email" placeholder="email">
+              </div>
+            <div class="field">
+              <label>Password</label>
+              <input type="password" name="password" placeholder="Password">
+            </div>
+            <h5 class="ui grey sub header"> Don't fill this if you are not an admin</h5>
+            <div class="field">
+                <label>Admin Code</label>
+                <input type="password" name="adminCode" placeholder="Admin Code">
+              </div>
+            <button class="ui button" type="submit">Sign Up</button>
+          </form>
+    </div>
+</div>
+
+<%- include ("partials/footer") %>

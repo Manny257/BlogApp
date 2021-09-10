@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">   
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="/Stylesheets/app.css">
+
+<title> Blog Site</title>
+</head>
+<body>
+    <div class="ui inverted fixed menu">
+        <div class="ui container">
+            <a href="/" class="header item"> <i class="hand peace outline icon"></i> Blog Site</a>
+            <a href="/" class="item">Home</a>
+            <a href="/blogs/new" class="item">New Post</a>
+            <a href="/enter_chat_rooms.html" class="item">Chat</a>
+            <div class="right menu">
+                <% if(!currentUser){ %>
+                    <a class="item" href="/login">Log In </a>
+                <% } else {%>
+                    <a class="item" href="/logout">Log Out </a>
+                <% } %>
+
+            </div>
+        </div>
+      </div>

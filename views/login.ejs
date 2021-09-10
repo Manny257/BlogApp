@@ -1,0 +1,24 @@
+<%- include ("partials/header") %>
+
+<div class="ui padded grid">
+    <div class="six wide centered column">
+        <form class="ui form" action="/login" method="POST">
+            <div class="field">
+              <label>User Name</label>
+              <input type="text" name="username" placeholder="Username">
+            </div>
+            <div class="field">
+              <label>Password</label>
+              <input type="password" name="password" placeholder="Password">
+            </div>
+            <button class="ui button" type="submit">Log In</button>
+            <div class="field">
+              <div class="grid">
+                <a href="/register">Click here to create account</a>
+              </div>
+            </div>
+          </form>
+    </div>
+</div>
+
+<%- include ("partials/footer") %>
